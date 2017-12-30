@@ -40,6 +40,10 @@ module HumanPower
       add_tree_rule :allow, *paths
     end
 
+    def clean_param(*paths)
+      add_tree_rule 'Clean-param', *paths
+    end
+
     def disallow(*paths)
       add_rule :disallow, *paths
     end
