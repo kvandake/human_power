@@ -41,11 +41,11 @@ module HumanPower
     end
 
     def clean_param(*paths)
-      add_tree_rule 'Clean-param', *paths
+      add_rule 'Clean-param', *paths
     end
         
     def host(*paths)
-      add_tree_rule 'Host', *paths
+      add_rule 'Host', *paths
     end
 
     def disallow(*paths)
